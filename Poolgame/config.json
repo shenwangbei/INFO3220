@@ -1,0 +1,47 @@
+{
+    "stage2" : true,
+    "table" : {
+        "colour":"green",
+        "size":{
+            "x":600,
+            "y":300
+        },
+        "friction":0.1,
+        "pockets": [
+            {"position":{"x":50,"y":50}},
+            {"position":{"x":195,"y":195}},            
+            {"position":{"x":5,"y":295},"radius":20},
+            {"position":{"x":100,"y":100},"radius":25}
+         ]
+    },
+    "balls" : [
+        {"colour":"white","position":{"x":50,"y":50},"velocity":{"x":100,"y":100},"mass":2,"radius":30,"strength":1e5},
+        {"colour":"red","position":{"x":150,"y":60},"velocity":{"x":-20,"y":20},"mass":2,"radius":15,"strength":1e5},
+        {"colour":"blue","position":{"x":550,"y":320},"velocity":{"x":-150,"y":80},"mass":2,"radius":15,"strength":1e5},
+        {"colour":"yellow","position":{"x":450,"y":200},"velocity":{"x":100,"y":-80},"mass":1,"radius":10,"strength":1e5},
+        {"colour":"#123456","position":{"x":250,"y":70},"mass":1,"radius":20,"strength":1e1,
+         "balls":[
+             {"colour":"red","position":{"x":-10,"y":0},"velocity":{"x":100,"y":10},"mass":1,"radius":10},
+             {"colour":"red","position":{"x":20,"y":0},"velocity":{"x":100,"y":10},"mass":1,"radius":30},
+             {"colour":"red","position":{"x":0,"y":-10}},
+             {"position":{"x":0,"y":10}, "mass":2,"strength":1e4,
+                 "balls":[
+                             {"colour":"blue","strength":1e3,
+                                 "balls":[
+                                            {"colour":"red", "strength":1e1}
+                                         ]
+                             }
+                          ]
+             }
+                ]
+        },
+        {"colour":"#123456","position":{"x":250,"y":70},"mass":1,"radius":20,"strength":1e5,
+         "balls":[
+             {"colour":"red","position":{"x":-10,"y":40},"velocity":{"x":100,"y":10},"mass":1,"radius":10},
+             {"colour":"red","position":{"x":60,"y":0}},
+             {"colour":"red","position":{"x":70,"y":-10}}
+                ]
+        }
+            ]
+}
+
